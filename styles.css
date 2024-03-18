@@ -1,0 +1,754 @@
+
+:root{
+    --white:#ffffff;
+    --black:#000000;
+    --midgray:#c1c1c1;
+    --blue:#086EB9;
+
+}
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    text-transform: capitalize;
+    font-family:"Raleway", sans-serif;
+    color:var(--white);
+    background-color: var(--black);
+    
+   
+}
+       
+html{
+    font-size:62.5%;
+    
+}
+        /* navigation-bar related section */
+
+.nav-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.5rem;
+    background-color: var(--black);
+    color:var(--white);
+}
+ 
+.nav-bar .logo span{
+    font-size:1.7rem;
+    font-weight: 800;
+    cursor:pointer;
+}
+.nav-bar .logo .special{
+   color:var(--blue);
+   cursor:pointer;
+}
+
+.nav-bar .menu{
+    display:flex;
+    padding-top:.4rem;
+    
+}
+.nav-bar .menu a{
+    padding:1rem;
+    font-weight:500;
+    color:var(--white);
+    text-transform:uppercase;
+    
+    
+}
+.nav-bar .menu a:hover,.nav-bar .menu a:hover i{
+    background-color:var(--blue);
+    border-radius: .5rem;
+    
+}
+.nav-bar .menu{
+    display:none;
+}
+.nav-bar .menu2{
+    font-size:2.2rem;
+    margin-right: 1rem;
+    cursor:pointer;
+}
+
+        /* hero-section related section*/
+
+.hero-section{
+    position:relative;
+    margin-bottom:2rem;
+    
+}
+.hero-section img{
+    
+    height:30rem;
+    width:400rem;
+    
+}
+
+
+.hero-section h1,p,h4,.icons{
+    position:absolute;
+}
+.hero-section h1{
+    top:35%;
+    border-radius: 20rem;
+    left:24%;
+    font-size:45px;
+   
+}
+.hero-section>p{
+    top:60%;
+    left:20%;
+    font-size:3.2vw;
+    font-weight: 550;
+    background-color: transparent;
+    margin-right:2rem;
+}
+.hero-section h4{
+    top:82%;
+    left:1%;
+    font-size:1.2rem;
+    padding:.9rem;
+    background-color:var(--black);
+    cursor:pointer;   
+}
+.hero-section h4:hover{
+    border:.1rem solid var(--white);
+}
+.hero-section .icons{
+    top:99%;
+    left:2.4%;
+    
+}
+.hero-section .icons i{
+    font-size: 1.4rem;
+    padding-left:.7rem;
+   
+}
+.hero-section .icons i:hover{
+    transition:transform .5s ease ;
+    transform:scale(1.2);
+    cursor:pointer;
+    color: var(--blue);
+    
+}
+
+        /* about related section */
+
+.about{
+    max-width:100%;  
+}
+.about h2{
+    text-align: center;
+    padding-top:1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.about h6{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    padding: 1.5rem 1.5rem;
+
+}
+.services .service{
+   display:flex;
+   flex-direction: column;
+   align-items: center;   
+}
+.services .service i{
+    font-size: 1.7rem;
+  
+}
+.services .service h3{
+    font-size:1.4rem;
+}
+.services .service span{
+    text-align: justify;
+    font-size: 1.1rem;
+}
+        /* work related section*/
+
+.work {
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    margin:1.5rem;
+}
+.work .desc{
+    display:flex;
+    flex-direction: column;
+}
+.work .desc h2{
+    font-size:1.5rem;
+}
+.work .desc>span{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.work .desc a{
+    font-size:1.3rem;
+    font-weight: 600;
+    margin-top:1rem;
+    max-width:15rem;
+   
+}
+.work .desc a>i{
+    padding:.6rem .6rem .6rem .2rem;
+}
+.work .desc a>span{
+    padding:.5rem;
+   
+}
+.work .desc a:hover{
+  border:.2rem solid var(--white);
+}
+.work .pic img{
+    margin-top: 1rem;
+    margin-right:1rem;
+    max-width: 70vw;  
+}
+
+        /* the team related section*/
+
+.teams{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3rem 2rem;
+}
+.teams h2{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+   
+}
+.teams h5{
+    font-size: 1.4rem;
+    padding-top:1rem;
+    padding-bottom:4rem;
+}
+.teams .members {
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.teams .members .member{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.teams .members .member img{
+    width:70vw;
+    margin-bottom: 1rem;
+
+}
+.teams .members .member strong{
+    font-size: 1.5rem;
+}
+.teams .members .member h6{
+    font-size: 1.2rem;
+}
+.teams .members .member span{
+    font-size:1.2rem;
+    line-height: 1.3rem;
+    padding:.5rem 0;
+}
+.teams .members .member a{
+    font-size:1.3rem;
+    text-align: center;
+    padding:1rem 1.6rem;
+    border: .2rem solid var(--white);
+    margin-right: .7rem;
+}
+.teams .members .member a:hover,.teams .members .member  a:hover i{
+    background-color: var(--blue);
+}
+.teams .members .member i{
+    margin: .3rem;
+}
+
+        /* achievements related section*/
+
+.achievements{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.achievements .achieve{
+    display:flex;
+    flex-direction: column;
+}
+.achievements .achieve .number{
+    font-size: 2.3rem;
+}
+.achievements .achieve span{
+    font-size: 1.5rem;
+}
+
+        /* projects related section*/
+
+.projects{
+    margin:4rem 2rem;
+}
+.projects h2{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.projects h6{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top:1rem;
+    padding-bottom:3rem;
+}
+.projects .project{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+}
+.projects .project img{
+   width:88vw;
+ 
+}
+
+        /* skills related section*/
+
+.skills {
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    margin:1rem 1rem;
+
+}
+.skills .detail h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.skills .detail span{
+    font-size: 1.2rem;
+    line-height: 2rem; 
+    
+}
+.skills .skill{
+    margin-top:2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.skills .skill .desc span{
+    font-size: 1.6rem;
+
+}
+.skills .skill .desc span i{
+    padding-right:.5rem;
+    
+}
+.skills .skill .desc .bar-container{
+    width:70vw;
+    height:8vw;
+    background-color: var(--white);
+    margin-top:.3rem;
+    margin-bottom:1.2rem;
+}
+.skills .skill .desc .bar-container .bar1{
+    background-color: var(--blue);
+    width:90%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills .skill .desc .bar-container span{
+    background-color: var(--blue);
+   
+}
+
+.skills .skill .desc .bar-container .bar2{
+    background-color: var(--blue);
+    width:85%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skill .desc .bar-container .bar3{
+    background-color: var(--blue);
+    width:75%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        /* pricing related section*/
+
+.pricing{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+    width:100vw;
+}
+.pricing h2{
+    font-size:1.6rem;
+    text-transform: uppercase;
+    margin-top:2rem;
+}
+.pricing h6{
+    font-size:1.3rem;
+    padding-top:.7rem;
+    padding-bottom:2rem;
+    font-weight: 400;
+}
+.pricing .prices{
+   display: flex;
+   justify-content: space-around;
+   margin-left:.5rem;
+   margin-right:.5rem;
+   width:82%;
+   
+}
+.pricing .prices .price{
+    width:36%;
+    margin:.2rem ;
+    box-shadow: 0 0 1rem .4rem var(--white);
+}
+.pricing .prices .basic{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+  
+}
+.pricing .prices .basic h3{
+    text-align: center;
+    width:100%;
+    padding:1.5rem;
+    font-size: 1.8rem;
+    border-bottom:.4rem solid var(--white);
+   
+}
+.pricing .prices .basic li{
+    font-size:1.3rem;
+    width:100%;
+    text-align: center;
+    padding:1.5rem 0.1rem;
+    border-bottom:.3rem solid white;
+}
+.pricing .prices .basic li strong{
+    font-size: 1.3rem;
+    padding-right: .4rem;
+    text-transform: uppercase;
+}
+.pricing .prices .basic a{
+    width:100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding:1.5rem ;
+   
+}
+.pricing .prices .basic a:hover {
+    background-color: var(--blue);
+    
+}
+
+.pricing .prices .pro{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+  
+}
+.pricing .prices .pro h3{
+    background-color: var(--blue);
+    text-align: center;
+    width:100%;
+    height:100%;
+    font-size: 1.8rem;
+    padding:1.4rem;
+    border-bottom:.4rem solid var(--white);
+   
+}
+.pricing .prices .pro li{
+    font-size:1.3rem;
+    width:100%;
+    padding:1.5rem 0.1rem;
+    text-align: center;
+    border-bottom:.3rem solid white;
+}
+.pricing .prices .pro li strong{
+    font-size: 1.4rem;
+    padding-right: .4rem;
+    text-transform: uppercase;
+}
+.pricing .prices .pro a{
+    width:100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding:1.5rem;
+}
+.pricing .prices .pro a:hover{
+    background-color: var(--blue);
+    
+}
+
+.pricing .prices  .premium{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+  
+}
+.pricing .prices  .premium h3{
+    text-align: center;
+    width:100%;
+    height:100%;
+    font-size: 1.8rem;
+    padding:1.4rem;
+    border-bottom:.4rem solid var(--white);
+   
+}
+.pricing .prices  .premium li{
+    font-size:1.3rem;
+    width:100%;
+    padding:1.5rem 0.1rem;
+    text-align: center;
+    border-bottom:.3rem solid white;
+}
+.pricing .prices .premium li strong{
+    font-size: 1.4rem;
+    padding-right: .4rem;
+    text-transform: uppercase;
+}
+.pricing .prices .premium a{
+    width:100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding:1.5rem;
+}
+.pricing .prices .premium a:hover{
+    background-color: var(--blue);
+    
+}
+
+        /* footer related section*/
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .contact h2{
+    font-size:1.9rem;
+}
+footer .contact h5{
+    font-size: 1.4rem;
+    padding:1rem 0;
+    font-weight:500;
+}
+footer .contact form{
+    display:flex;
+    flex-direction: column;
+    width:82vw;
+    margin:2rem;
+}
+footer .contact form input{
+    padding:.8rem;
+    margin-bottom:.7rem;
+    width:100%;
+    border:.1rem solid var(--midgray);
+}
+footer .contact form input::placeholder{
+    color:var(--midgray);
+    font-size:1.2rem;
+}
+footer .contact form button{
+    padding:.7rem;
+    width:100%;
+    border:.2rem solid var(--midgray);
+    cursor:pointer;
+    font-size:1.2rem;
+    letter-spacing: .1rem;
+}
+footer .contact form button:hover,footer .contact form button:hover i{
+    background-color: var(--blue);
+}
+footer .map{
+    margin:2rem auto;
+}
+footer .map img{
+   
+    margin:0 5vw;
+    width:90%;
+}
+footer .address{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2rem;
+}
+footer .address a{
+    font-size: 1.5rem;
+    padding: .6rem;
+    border:.1rem solid var(--white);
+    margin-bottom:1rem;
+}
+footer .address a:hover{
+    background-color: var(--blue);
+}
+
+footer .address li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    line-height: 2rem;
+   
+}
+
+        /* media queries full responsive related section */
+
+@media screen and (min-width:481px){
+    html{
+        font-size: 100%;
+    }
+   
+}
+
+
+@media screen and (min-width:810px){
+    html{
+        font-size:102%;
+    }
+    .nav-bar .menu{
+        display:flex;
+    }
+    .nav-bar .menu2{
+        display:none;
+    }
+    .nav-bar .menu a{
+        padding:.9rem;
+        font-size:1.1rem;
+    }
+    .hero-section img{
+        max-width:90%;
+      
+    }
+    .hero-section .icons{
+        top:70%;
+        left:1.4%;
+        
+    }
+    .hero-section>p{
+        font-size: 2.6vw;
+    }
+    .teams .members {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1.5rem;
+    }
+    .teams .members .member img{
+        width:42vw;  
+    
+    }
+    .projects .project{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1rem;
+        
+    }
+    .projects .project img{
+        width:44vw;
+     }
+     .skills {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:1rem;
+    
+    }
+    .skills .detail span{
+        font-size: 1rem;
+        line-height: 2rem; 
+        
+    }
+    .skills .skill .desc .bar-container{
+        width:48vw;
+        height:6vw;
+    }
+    .pricing .prices .basic li{
+        font-size:1.2rem;
+    }
+    .pricing .prices .pro li{
+        font-size:1.2rem;
+    }
+    .pricing .prices .premium li{
+        font-size:1.2rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:980px){
+    html{
+        font-size:97%;
+    }
+    .nav-bar .menu a{
+        padding:1rem 1.5rem;
+        font-size:1.2rem;
+    }
+    .hero-section h1{
+        font-size: 2.1vw;
+    }
+    .hero-section>p{
+        font-size: 1.7vw;
+    }
+    .work {
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+    .work .pic img{
+        max-width: 50vw;  
+    }
+    
+     .teams .members {
+        grid-template-columns: repeat(4,1fr);
+    }
+    .teams .members .member img{
+        width:21vw;  
+    }
+    .projects .project{
+        grid-template-columns: repeat(4,1fr);
+        
+    }
+    .projects .project img{
+        width:22vw;
+     }
+     .skills .skill .desc .bar-container{
+        width:38vw;
+        height:2.7vw;
+    }
+
+}
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
